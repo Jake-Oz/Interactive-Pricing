@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+body{
+    background-image: url("/images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Manrope', arial, serif;
+
+    padding: 2rem 0 2rem 0;
+
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: $fontWeight2;
+    
+    color:$darkDesaturatedBlue;
+}
+
+p{
+    font-size: $fontSize;
+    font-weight: $fontWeight1;
+    color: $grayishBlue;
+}
