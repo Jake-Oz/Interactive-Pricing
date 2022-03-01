@@ -19,26 +19,50 @@
   
   <div class="sliderpanel">
     <div class="pricing">
-      
+      <div class="pricing__volume">
+        <p id="volume">100K pageviews</p>
+      </div>
+      <div class="pricing__prices">
+        <p id="cash" class="pricing__money">$16.00 </p>
+      </div>
+      <div class="pricing__price">
+        <p> / month</p>
+      </div>
     </div>
     <div class="slider-container">
       <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
-    
+    <div class="discount">
+      <div class="discount__label">
+        <p>Monthly Billing</p>
+      </div>
+      <div class="discount__selector">
+        <label id="switch" class="switch">
+          <input type="checkbox">
+          <span class="selector round"></span>
+        </label>
+      </div>
+      <div class="discount__label">
+        <p>Yearly Billing</p>
+      </div>
+      <div class="discount__sign">
+        <p>25% discount</p>
+      </div>
+    </div>
+    <hr>
+    <div class="bottom">
+      <div class="bottom__checklist">     
+        <p><img class = "bottom__icons" src="/images/icon-check.svg" alt="checkmark">Unlimited websites</p>     
+        <p><img class = "bottom__icons" src="/images/icon-check.svg" alt="checkmark">100% data ownership</p>
+        <p><img class = "bottom__icons" src="/images/icon-check.svg" alt="checkmark">Email reports</p>
+      </div>
+      <a href="#" class="bottom__trialbutton">
+            <p>Start my trial</p>
+      </a>
+    </div>
   </div>
  
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+  
   
   <script src="/app/script.js"></script>
 </body>

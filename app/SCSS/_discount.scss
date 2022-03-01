@@ -1,0 +1,95 @@
+.discount{
+    padding-top: 2.625rem;
+    padding-bottom: 1.625rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    
+    &__label{
+        p {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__selector{
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+          }
+          
+          /* Hide default HTML checkbox */
+          .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          
+          /* The slider */
+          .selector {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: -5px;
+            right: 0;
+            bottom: 0;
+            background-color: $lightGrayishBlue;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+          
+          .selector:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 0.5px;
+            top: 1px;
+            background-color: $white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+        
+          input:checked + .selector {
+            background-color: $strongCyan;
+          }
+          
+          input:focus + .selector {
+            box-shadow: 0 0 1px $lightGrayishBlue2;
+          }
+          
+          input:checked + .selector:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+          
+          /* Rounded sliders */
+          .selector.round {
+            border-radius: 34px;
+          }
+          
+          .selector.round:before {
+            border-radius: 50%;
+          }
+    }
+
+    &__sign{
+        width: 80px;
+        height: 18px;
+        background-color: $lightGrayishRed;
+        text-align: center;
+        padding-bottom: 2.5px;
+        border-radius: 9px;
+        p{
+            font-size: 10px;
+            color: $lightRed;
+            margin: 0;
+            padding-top: 2px;
+        }
+    }
+}
+

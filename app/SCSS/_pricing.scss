@@ -1,0 +1,31 @@
+.pricing{
+    min-height: 3.75rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: $fontSize;
+
+
+    &__volume{
+        flex: 1;
+        text-align: left; 
+    }
+
+    &__prices{
+        flex: 1;
+        text-align: right;
+    }
+
+    &__price{
+        
+    }
+
+    &__money {  
+        font-size: 2.5rem;
+        font-weight: $fontWeight2;
+        color: $darkDesaturatedBlue;
+        font-style: normal;
+        padding-right: 0.625rem;
+    }
+}
